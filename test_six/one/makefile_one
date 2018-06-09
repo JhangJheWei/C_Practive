@@ -1,0 +1,6 @@
+one:one_main.c Subroutine_program.c
+	gcc -o one one_main.c Subroutine_program.c
+one_main.o:one_main.c Declare_program.h
+	gcc -c one_main.c
+Subroutine_program.o:Subroutine_program.c
+	gcc -c two.c
