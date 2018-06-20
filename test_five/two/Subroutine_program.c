@@ -1,5 +1,5 @@
+#include <stdlib.h>
 #include <stdio.h>
-
 void char_function_one(){
 	char *first = "123";
 	printf("%s\n", first);
