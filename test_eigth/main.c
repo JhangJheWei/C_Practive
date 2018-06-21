@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
 	printf("file1...\n");
 	printf("old_mask is %#o\n", old_mask);//設定文件權限，系統建立新檔案之預設權限0666=>再減掉系統預設權限遮罩為0222=>等於新增檔案的存取權限
 	printf("new_mask is %#o\n", new_mask);
-	system("touch file1");//建立新檔案
+	system("touch file1");//建立新檔案，若有檔案則更改檔案時間
 
 	new_mask = 0002;
 	old_mask = umask(new_mask);
